@@ -1,157 +1,119 @@
-✅ README.md (Final Version — Just Copy & Paste)
 # HashHero – Animated Hashing Simulator (C + BGI Graphics)
 
-HashHero is a fun and interactive **visual hashing simulation** built using the old-school **BGI graphics library** (Turbo C / WinBGIm).  
-It shows how hashing works internally using:
+HashHero is an interactive **hashing visualization tool** built using the classic **BGI graphics library**.  
+It visually demonstrates how hashing, modulo operation, collisions, and linear probing work internally.
 
-- Key hashing (`key % slots`)
-- Linear probing
-- Collision detection
-- Step-by-step animation
-- A moving “hero” character carrying keys
-- Flashing collision cells
-- Success & collision sounds
-
-This project helps students understand **open addressing hashing** in a visual and enjoyable way.
+This project is perfect for students learning **Data Structures**, especially **Hash Tables**.
 
 ---
 
 ## 🚀 Features
 
-✔ Animated insertion of keys  
-✔ Custom hero character that carries numbers  
-✔ Collision flashing (red highlight)  
-✔ Linear probing movement  
-✔ Success + collision beep sounds  
-✔ Real-time step / message panel  
-✔ Slot indexing displayed  
-✔ Easy to run in Turbo C or WinBGIm  
+- 🧮 Hash function: `index = key % slots`
+- 🔁 Collision handling using **Linear Probing**
+- 🕹 Animated “Hero” character carrying the key
+- ⚡ Collision cells flash red
+- 🔊 Success and collision beep effects
+- 📊 Right-side message panel
+- 🎨 Dynamic hash table boxes with key display
 
 ---
 
-## 🧪 Hashing Technique Used
-
-- **Hash Function:**  
-
-
-index = key % slots
-
-- **Collision Handling:**  
-✔ Linear Probing (`(index + 1) % slots`)
-
----
-
-## 📁 Project Structure
+## 📁 Project Contents
 
 
 
-├── hashhero.c # Main source code
+├── hashhero.c # Main program source
 └── README.md # Documentation
 
 
 ---
 
-# 🖥 How to Run (Turbo C / DOSBox)
+# 🖥 How to Run in Turbo C (DOSBox)
 
-### 1️⃣ Place files in your Turbo C directory:
+### 1️⃣ Install Turbo C++ with DOSBox (common student package)
+
+### 2️⃣ Place your `hashhero.c` file here:
 
 
 C:\TURBOC3\BIN\
 
 
-### 2️⃣ Make sure BGI folder path exists:
+### 3️⃣ Ensure the BGI folder exists:
 
 
 C:\TURBOC3\BGI\
 
 
-### 3️⃣ Edit this line in the code (Already set):
+### 4️⃣ The code already contains the correct line:
 ```c
 initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
 
-4️⃣ Open Turbo C → File → Open → hashhero.c
-5️⃣ Compile: Alt + C → C
-6️⃣ Run: Ctrl + F9
-A graphics window will appear showing:
+5️⃣ Open Turbo C → File → Open → hashhero.c
+6️⃣ Compile:
+Alt + C → C
 
-Hash table
+7️⃣ Run:
+Ctrl + F9
 
-Hero animation
 
-Key insertion
+✔ A graphics window will open
+✔ The hero will move, insert keys, handle collisions, and animate everything
 
-Collision flashing
-
-Beep sounds
-
-🖥 How to Run (Dev-C++ / Code::Blocks + WinBGIm)
-
-To use the modern version of this program:
-
+🖥 How to Run in Dev-C++ / Code::Blocks (WinBGIm)
 1️⃣ Install WinBGIm graphics library
-2️⃣ Create a new C project
+2️⃣ Create new C project
 3️⃣ Add hashhero.c
-4️⃣ Add these linker flags:
+4️⃣ Add these linker flags (only for WinBGIm):
 -lbgi -lgdi32 -lcomdlg32 -luuid -lole32 -lws2_32
 
 5️⃣ Build & Run
 
-A BGI graphics window will open.
+A graphics window will appear and show the full animation.
 
-📸 Screenshots (You can add later)
 
-Add screenshots of the animation here once you run it.
 
-Example:
+📚 Learning Outcomes
 
-![Hash Table Animation](screenshots/demo.png)
+Using HashHero, students learn:
 
-📚 Learning Outcome
+How hashing works
 
-This project helps students understand:
+How modulo (%) calculates slot index
 
-Hash functions
+Why collisions happen
 
-Modulo indexing
+How linear probing resolves collisions
 
-Collision resolution
+How elements get stored in a hash table
 
-Linear probing
+How arrays + probing create continuous search
 
-Table traversal
-
-Visual debugging of hashing
-
-Perfect for:
-
-DSA assignments
-
-College lab submissions
-
-Visualization projects
-
-Teaching classmates
+It turns a complex data structure into a fun visual demonstration.
 
 🤝 Contributing
 
-Feel free to fork and add:
+Want to improve HashHero? You can add:
 
 Quadratic probing
 
 Double hashing
 
-New hero sprites
+More animations
 
-Better animations
+Better hero sprite
 
-Sound improvements
+Sound effects
+
+Table resizing
+
+Pull requests are welcome!
 
 📜 License
 
-This project is open-source.
-You may modify and use it for personal or educational purposes.
+This project is open for educational and personal use.
 
 👩‍💻 Developer
 
 PRAGATI-AI-CODER
-HashHero – Visual Hash Table Simulation Project
+Creator of HashHero – Visual Hashing Simulation
